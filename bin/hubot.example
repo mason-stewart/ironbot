@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# make sure to fill these in!
+# see https://github.com/hipchat/hubot-hipchat#hubot_hipchat_jid
+HUBOT_HIPCHAT_JID="..."
+HUBOT_HIPCHAT_PASSWORD="..."
+
+npm install
+export PATH="node_modules/.bin:node_modules/hubot/node_modules/.bin:$PATH"
+
+exec node_modules/.bin/hubot "$@"
+
